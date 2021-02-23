@@ -31,7 +31,7 @@ app.use(function(req, res, next) {
  **********************/
 
 app.get('/api', function(req, res) {
-  // Add your code here
+  const items = ['Hello', 'World']
   res.json({success: 'get call succeed!', url: req.url});
 });
 
