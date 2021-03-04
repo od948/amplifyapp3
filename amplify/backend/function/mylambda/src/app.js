@@ -29,9 +29,10 @@ app.use(function(req, res, next) {
 /**********************
  * Example get method *
  **********************/
-
 app.get('/api', function(req, res) {
-  const items = ['Hello', 'World']
+  const items = ['hello', 'world']
+
+  console.log("this worked")
   res.json({success: 'get call succeed!', url: req.url});
 });
 
